@@ -9,6 +9,7 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -18,7 +19,7 @@ import com.capgemini.productapp.entity.Product;
 import com.capgemini.productapp.repository.ProductRepository;
 import com.capgemini.productapp.service.impl.ProductServiceImpl;
 
-@RunWith(SpringRunner.class)
+@RunWith(MockitoJUnitRunner.class)
 	@SpringBootTest
 	public class ProductServiceTest {
 		
